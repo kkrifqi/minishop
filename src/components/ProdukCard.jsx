@@ -19,7 +19,7 @@ function ProdukCard({ produk }) {
                 <img src={produk.image} className="w-full h-48 object-contain rounded-md bg-white p-2" />
                 <div className="absolute top-2 right-2">
                     <Badge color={warnaRating(produk.rating.rate)}>
-                        Rate {produk.rating.rate}
+                        ★ {produk.rating.rate}
                     </Badge>
                 </div>
             </div>

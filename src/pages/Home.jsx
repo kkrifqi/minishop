@@ -74,7 +74,7 @@ function Home() {
 
             <div className="mt-10 flex justify-center items-center gap-6">
                 <button 
-                    className="border rounded-md px-4 py-2 bg-white hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                    className="rounded-md px-4 py-2 bg-[#0D3B66] text-white hover:bg-[#092b4a] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     disabled={halaman === 1} 
                     onClick={() => setHalaman((h) => h - 1)}
                 >
@@ -82,7 +82,7 @@ function Home() {
                 </button>
                 <span className="text-slate-600 font-medium">Halaman {halaman} dari {totalHalaman}</span>
                 <button 
-                    className="border rounded-md px-4 py-2 bg-white hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                    className="rounded-md px-4 py-2 bg-[#0D3B66] text-white hover:bg-[#092b4a] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     disabled={halaman === totalHalaman} 
                     onClick={() => setHalaman((h) => h + 1)}
                 >

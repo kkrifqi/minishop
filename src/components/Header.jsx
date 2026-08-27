@@ -12,22 +12,22 @@ function Header() {
     }
 
     return (
-        <header className="flex items-center justify-between px-6 py-4 bg-white border-b sticky top-0 z-10">
+        <header className="flex items-center justify-between px-6 py-4 bg-[#0D3B66] text-white sticky top-0 z-10 shadow-md">
             <h1 className="text-2xl font-bold tracking-tight">MiniShop</h1>
             <nav className="flex items-center gap-6">
-                <Link to="/" className="text-slate-600 hover:text-slate-900 transition-colors">Beranda</Link>
-                <Link to="/keranjang" className="text-slate-600 hover:text-slate-900 transition-colors">Keranjang</Link>
+                <Link to="/" className="text-white hover:text-gray-200 transition-colors">Beranda</Link>
+                <Link to="/keranjang" className="text-white hover:text-gray-200 transition-colors">Keranjang</Link>
 
                 {user ? (
                     <div className="flex items-center gap-3">
-                        <span className="text-slate-500">{user.email}</span>
-                        <Button variant="outline" onClick={handleLogout}>
+                        <span className="text-white/80">{user.email}</span>
+                        <Button onClick={handleLogout} className="bg-transparent border border-white text-white hover:bg-white hover:text-[#0D3B66]">
                             Logout
                         </Button>
                     </div>
                 ) : (
                     <Link to="/login">
-                        <Button variant="primary">Login</Button>
+                        <Button className="bg-white text-[#0D3B66] hover:bg-gray-100">Login</Button>
                     </Link>
                 )}
             </nav>

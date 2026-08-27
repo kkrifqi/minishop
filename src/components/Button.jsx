@@ -1,7 +1,7 @@
 function Button({ children, variant = "primary", className = "", ...props }) {
     const variants = {
-        primary: "bg-slate-900 text-white hover:bg-slate-700",
-        outline: "border border-slate-300 text-slate-700 hover:bg-slate-50",
+        primary: "bg-[#0D3B66] text-white hover:bg-[#092b4a]",
+        outline: "border border-[#0D3B66] text-[#0D3B66] hover:bg-[#0D3B66] hover:text-white",
     };
   
     return (

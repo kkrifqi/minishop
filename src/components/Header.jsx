@@ -27,7 +27,7 @@ function Header() {
                     </div>
                 ) : (
                     <Link to="/login">
-                        <Button className="bg-white text-[#0D3B66] hover:bg-gray-100">Login</Button>
+                        <Button className="bg-transparent border border-white text-[#0D3B66]  hover:text-[#0D3B66] hover:bg-white">Login</Button>
                     </Link>
                 )}
             </nav>

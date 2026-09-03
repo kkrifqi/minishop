@@ -21,7 +21,7 @@ function Header() {
                 {user ? (
                     <div className="flex items-center gap-3">
                         <span className="text-white/80">{user.email}</span>
-                        <Button onClick={handleLogout} className="bg-transparent border border-white text-white hover:bg-white hover:text-[#0D3B66]">
+                        <Button onClick={handleLogout} className="bg-transparent border border-white text-[#0D3B66] hover:bg-white hover:text-[#0D3B66]">
                             Logout
                         </Button>
                     </div>
